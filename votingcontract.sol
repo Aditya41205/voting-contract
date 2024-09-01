@@ -29,7 +29,7 @@ bool public isvoting;
 
     function Stopvoting()external returns (bool){
         isvoting=false;
-        emit startvoting(msg.sender);
+        emit stopvoting(msg.sender);
         return true;
     }
 
